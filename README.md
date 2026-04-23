@@ -24,6 +24,7 @@ ib tset ans
 6)free -m (округлить)
 Ответ: 4096 ?не сходится с командой?
 
-7) 
+7) hostname --fqdn или cd /etc/ cat hosts
+   
 
 burger
