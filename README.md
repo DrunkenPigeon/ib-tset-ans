@@ -8,7 +8,7 @@ ib tset ans
 4)uname -m 
 Ответ: x86_64
 5)grep -c '/bin/bash' /etc/passwd
-Ответ: ?
+Ответ: 7 ?
 6)free -m
-Ответ: 4095
+Ответ: 4096 ?
 
