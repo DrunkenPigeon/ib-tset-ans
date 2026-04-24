@@ -89,3 +89,80 @@ ib tset ans
 Ответ: 2;orders;employees
 
 МДК 01.03
+
+1) Ответ: транспортный
+
+2) ifconfig или ip a show eth0
+Ответ: 172.21.0.9
+
+3) Ответ: 10.20.30.5
+   
+4) cat /eth/resolv.conf
+Ответ: 127.0.0.11
+
+5) netstat -nt | awk '{print $6}' | sort uniq -c | grep -E "ETABLISHED|LISTEN"
+Ответ: 2;0
+
+6) ping -C 5 192.168.1.
+Ответ: 0%;0,3
+
+7) Ответ: 5
+
+8) Ответ: ip route add 10.10.10.0/24 via 192.168.1.254
+
+9) ip link add link eth0 name eth.100 type vlan id 100
+Ответ:eth.100
+
+10) Ответ:987;00:15:5d:00:12:24
+
+МДК 01.04
+
+1) конфиденциальность
+
+2) lsb_release -a
+Ответ: smolensk
+
+3) nginx -v
+Ответ: 1.18.0
+
+4) Ответ: 80
+
+5) -
+
+6) Ответ: 3;default,api.local,admin.local
+
+7) Ответ: auditctl -w /etc/passwd -p wa;active
+
+8) Ответ: auth required pam_faillock.so deny=5 unlock_time=600
+
+9) Ответ: 10:15:33;SSL_do_handshake() failed
+
+10) Отвте: worker;50.00,512
+
+МДК 01.05
+
+1) Ответ: В
+
+2) ip route
+Ответ: 172.21.0.1
+
+3) cd /etc/
+   cat hostname
+Ответ: 48
+
+4) uptime
+Ответ: 48
+
+5) traceroute 8.8.8.8 Мой ответ: 8;192.168.0.1
+
+6) -
+
+7) Ответ: 2025-06-15
+
+8) Ответ: ip addr add 10.20.30.40/24 dev eth1
+
+9) Ответ: ip route add 10.10.10.0/24 via 192.168.100.254;success
+
+10) Ответ: 10.8.0.2;192.168.100.10
+
+11) Ответ: 8
