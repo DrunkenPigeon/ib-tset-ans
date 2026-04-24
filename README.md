@@ -53,4 +53,39 @@ ib tset ans
     cat default.conf
 Ответ: 1 (т.к некоректный IP)
 
-12) 
+12) -
+
+13) cat /etc/ssh/sshd_config_broken
+Ответ: 15;PermitRootLogin;no
+
+МДК 01.02
+
+1) Ответ: 3НФ
+   
+2) service postgresql status
+Ответ: online
+
+3) pg_config ---version
+Ответ: 14.20
+
+4) sudo systemctl status postgresql
+Ответ: -
+
+5)  Ответ: admin@company.local,backup@company.local
+
+6)  -
+
+7)  cat company_db.sql
+Ответ: 12
+
+8) mysqldump -u dbuser -p security_db > /tmp/backup_security.sql
+   cd /tmp
+   du -h backup_security.sql
+   Ответ: /tmp/backup_security.sql;4 (не принимает)
+
+9) -
+
+10) cat company.db.sql
+Ответ: 2;orders;employees
+
+МДК 01.03
