@@ -52,4 +52,5 @@ ib tset ans
     cd sites-enabled
     cat default.conf
 Ответ: 1 (т.к некоректный IP)
-burger
+
+12) 
