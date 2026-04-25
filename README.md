@@ -175,11 +175,12 @@ ib tset ans
 
 2. ?
 
+
 3. Ответ: HIGH
 
 4. невозможно подключиться
 
-5. ?
+5. cd gpio   cd gpio17   cat direction   cat value   Ответ: in; 1
 
 6. Ответ: 7;2
 
