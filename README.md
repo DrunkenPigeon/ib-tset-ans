@@ -127,7 +127,7 @@ ib tset ans
 
 4) Ответ: 80
 
-5) -
+5) sudo ausearch -m USER_AUTH Ответ: 5
 
 6) Ответ: 3;default,api.local,admin.local
 
