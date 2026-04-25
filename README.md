@@ -69,7 +69,7 @@ ib tset ans
 Ответ: 14.20
 
 4) sudo systemctl status postgresql
-Ответ: -
+Ответ: online
 
 5)  Ответ: admin@company.local,backup@company.local
 
