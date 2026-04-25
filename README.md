@@ -111,7 +111,7 @@ ib tset ans
 8) Ответ: ip route add 10.10.10.0/24 via 192.168.1.254
 
 9) ip link add link eth0 name eth.100 type vlan id 100
-Ответ:eth.100
+Ответ:eth0.100
 
 10) Ответ:987;00:15:5d:00:12:24
 
