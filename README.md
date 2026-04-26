@@ -101,7 +101,7 @@ ib tset ans
 Ответ: 127.0.0.11
 
 5) netstat -nt | awk '{print $6}' | sort uniq -c | grep -E "ETABLISHED|LISTEN"
-Ответ: 2;0
+Ответ: 2;6
 
 6) ping -C 5 192.168.1.
 Ответ: 0%;0,3
@@ -127,7 +127,7 @@ ib tset ans
 
 4) Ответ: 80
 
-5) sudo ausearch -m USER_AUTH Ответ: 5
+5) ausearch -m USER_AUTH | grep -c "^type=" Ответ: 5
 
 6) Ответ: 3;default,api.local,admin.local
 
@@ -168,101 +168,109 @@ ib tset ans
 11) Ответ: 8
 
 
-
-
 МДК 01.06
-1. Ответ: контроллер
+1) Ответ: контроллер
 
-2. ?
+2) ?
 
 
-3. Ответ: HIGH
+3) Ответ: HIGH
 
-4. невозможно подключиться
+4) Ответ: active
 
-5. cd gpio   cd gpio17   cat direction   cat value   Ответ: in; 1
+5) cd /home/student/gpio/gpio17
+   cat direction
+   cat value
+Ответ: in; 1
 
-6. Ответ: 7;2
+6) Ответ: 7;2
 
-7. Ответ: 5
+7) cat skud.log
+   Ответ: 5
 
-8. ?
+8) Ответ: stty -F /dev/ttySO 9600 cs8 -parenb -cstopb
 
-9. Ответ: on-failure;network.target (полностью совпадает с примером из задания)
+9) Ответ: on-failure;network.target (полностью совпадает с примером из задания)
 
-10. Ответ: 4800;9600
+10) Ответ: 4800;9600 (смотреть файл)
 
-11. Ответ: 5;3
-
+11) Ответ: 5;3
 
 
 МДК 02.02 
-1. Ответ: симметричный
+1) Ответ: симметричный
 
-2. ?
+2) sudo su
+   sha256sum /etc/passwd
+   Ответ:
+   
+3) sha256sum /etc/hostname
+Ответ: 8a82b80586f6dea
 
-3. ?
+4) sudo su
+   gpg -c --passphrase CryptoPass123 --output /home/student/secret.txt.gpg /home/student/secret.txt                                                                      после выбрать <Cancel>
+   stat -c %s /home/student/secret.txt.gpg
+   Ответ: secret.txt.gpg;109 или 97 (оба верные)
 
-4. ?
+5) Ответ: shred -vfz -n 3 //home/student/confidential.dat
 
-5. ?
+6) base64 -d message.enc
+Ответ: flag{crypto_master}
 
-6. ?
+7) openssl x509 -enddate -noout -in /etc/ssl/cert5/server.crt
+Ответ: 2027-06-15
 
-7. ?
+8) Ответ: openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/server.key -out /etc/ssl/certs/server.crt -subj "/CN=secure.local"
 
-8. Ответ: openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/server.key -out /etc/ssl/certs/server.crt -subj "/CN=secure.local"
+9) Ответ: cryptsetup luksOpen /dev/sda1 secure_data
 
-9. ?
+10) Ответ: req -x509 -newkey rsa:4096 -days3650
 
-10. ?
-
-11. ?
-
-
+11) Ответ: openssl enc -aes-356-cbc -salt -in file.txt -out file.enc
 
 
 МДК 02.01 
-1. Ответ: active
+1) systemctl status clamav-daemon
+Ответ: active
 
-2. sudo iptables -L Ответ: ACCEPT;6
+2) cat /home/student/firewall/iptables_rules.txt
+Ответ: ACCEPT;6
 
-3. Ответ: 8
+3) Ответ: 8
 
-4. Ответ: 8
+4) Ответ: 8
 
-5. Ответ: shadow
+5) Ответ: shadow
 
-6. ?
+6) Ответ: iptables -A INPUT -p tcp 443 -j ACCEPT
 
-7. Ответ: 10.0.0.55;admin;48
+7) Ответ: 10.0.0.55;admin;48
 
-8. Ответ: 5;3600
-
-
-
+8) Ответ: 5;3600
 
 МДК 03.01
-1. Ответ: виброакустический
+1) Ответ: виброакустический
 
-2. Ответ: шумовая
+2) Ответ: шумовая
 
-3. Ответ: 4
-
-
+3) Ответ: 4
 
 МДК 03.02
-1. Ответ: инфракрасный
+1) Ответ: инфракрасный
 
-2. Ответ: 2
+2) cat /var/log/skud/events.csv
+Ответ: 2
 
-3. Ответ: 65204
+3) cat /var/lib/skud/access_control.db
+Ответ: 65204
 
 
 МДК 03.03
-1. Ответ: 22
+1) Ответ: 22
+   
+2) cat /opt/ctf/configs/network.json
+  Ответ: 22
 
-2. Ответ: 22
-
-3. Ответ: 45
+3)cat /opt/ctf/configs/network.json
+ Ответ: 45
 
