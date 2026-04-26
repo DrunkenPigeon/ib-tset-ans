@@ -65,10 +65,10 @@ ib tset ans
 2) service postgresql status
 Ответ: online
 
-3) pg_config ---version
+3) pg_config ---version или psql -V
 Ответ: 14.20
 
-4) sudo systemctl status postgresql
+4) sudo systemctl status postgresql или service postgresql status
 Ответ: online
 
 5)  Ответ: admin@company.local,backup@company.local
