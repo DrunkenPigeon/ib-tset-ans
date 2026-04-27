@@ -241,8 +241,8 @@ ib tset ans
 4) Ответ: 8
 
 5) Ответ: shadow
-
-6) Ответ: iptables -A INPUT -p tcp 443 -j ACCEPT
+          
+6) Ответ: iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 
 7) Ответ: 10.0.0.55;admin;48
 
