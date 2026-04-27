@@ -205,7 +205,7 @@ ib tset ans
    Ответ: ad1fbc2a37bf8a5d
    
 3) sha256sum /etc/hostname
-Ответ: 8a82b80586f6dea
+Ответ: 80c82b80586f6dea
 
 4) sudo su
    gpg -c --passphrase CryptoPass123 --output /home/student/secret.txt.gpg /home/student/secret.txt                                                                      после выбрать <Cancel>
