@@ -202,7 +202,7 @@ ib tset ans
 
 2) sudo su
    sha256sum /etc/passwd
-   Ответ:
+   Ответ: ad1fbc2a37bf8a5d
    
 3) sha256sum /etc/hostname
 Ответ: 8a82b80586f6dea
