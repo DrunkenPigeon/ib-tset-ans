@@ -83,7 +83,8 @@ ib tset ans
    du -h backup_security.sql
    Ответ: /tmp/backup_security.sql;4 (не принимает)
 
-9) -
+9) ls -l backup_security.sql | awk '{print $5}'
+    Ответ: /tmp/backup_security.sql;707
 
 10) cat company.db.sql
 Ответ: 2;orders;employees
@@ -93,7 +94,7 @@ ib tset ans
 1) Ответ: транспортный
 
 2) ifconfig или ip a show eth0
-Ответ: 172.21.0.9  (не принимает)
+Ответ: 172.21.0.9
 
 3) Ответ: 10.20.30.5
    
@@ -153,7 +154,8 @@ ib tset ans
 4) uptime
 Ответ: 48
 
-5) traceroute 8.8.8.8 Мой ответ: 8;192.168.0.1
+5) traceroute 8.8.8.8
+   Ответ:10;172.18.0.1
 
 6) -
 
