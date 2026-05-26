@@ -3,7 +3,9 @@ ib tset ans
 МДК 01.01
 
 
-1)-
+1)cd /opt/security/
+ls -l config.conf
+Ответ: secadmin
 
 
 2) cd /etc/
@@ -29,7 +31,7 @@ ib tset ans
 
 7) hostname --fqdn или cd /etc
    cat hosts
-Ответ: ad73d9a22d9b или ad73d9a22d9b server.domain.local ?
+Ответ: ad73d9a22d9b 
 
 
 8) cat /var/log/auth.log
@@ -157,7 +159,7 @@ ib tset ans
 5) traceroute 8.8.8.8
    Ответ:10;172.18.0.1
 
-6) -
+6) arp -a Ответ: aa:bb:cc:dd:ee:ff
 
 7) Ответ: 2025-06-15
 
@@ -173,8 +175,8 @@ ib tset ans
 МДК 01.06
 1) Ответ: контроллер
 
-2) ?
-
+2) ls /dev/ttyS* /dev/ttyUSB* 2>/dev/null | wc -l 
+Ответ: 0
 
 3) Ответ: HIGH
 
