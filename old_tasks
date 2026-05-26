@@ -1,1 +1,99 @@
+МДК 01.01
 
+1) cat etc/passwd
+Ответ: 25
+2) cd var/data
+file mystery data
+Ответ: gzip compressed data
+3) sudo su
+groupadd restricted_users
+sudo usermod -aG restricted_users analyst
+chmod 750 /srv/confidential
+chmod 2750 /srv/confidential
+chmod 3750 /srv/confidential
+Ответ: drwxr-s--T
+4) sudo su
+cd /etc/apache2/sites-enabled
+cat default.conf
+Ответ: 1
+
+МДК 01.02
+
+1) pg_config --version
+Ответ: 14.20
+2) sudo systemctl status postgreaql
+Ответ: active
+3) cat company_db.sql
+Ответ: 12
+4)-
+5) cat company_db.sql
+Ответ: 2;orders;employees
+МДК 01.03
+1) Ответ: 10.20.30.5
+2) cat /etc/resolv.conf
+Ответ: 127.0.0.11
+3) Ответ:5
+4) sudo su
+cd /etc/network
+sudo ip link add link eth0 name eth0.10
+type vlan id 10
+sudo ip link set dev eth0.10 up
+sudo ip addr add 192.168.100.1/24 dev0.10
+ifconfig
+Ответ: eth0.100
+5) Ответ: 987;00:15:5d:00:12:34
+
+МДК 01.04
+1) nginx -v
+Ответ: 1.18.0
+2) Ответ: 80
+3) Ответ: 3;default,api.local,admin.local
+4) Ответ: 10:15:33;SSL_do_handshake() failed
+5) Ответ: worker;50.00;512
+
+МДК 01.05
+1) hostname
+Ответ: security-srv-01
+2) uptime
+Ответ: 48 (47 + time = 48)
+3) Ответ: 2025-06-15
+4) Ответ: 10.8.0.2;192.168.100.10
+5) Ответ: 8
+
+МДК 01.06
+1) Ответ: HIGH
+2) Ответ: active
+3) cat skud.log
+Ответ: 5
+4) cat skud_config.yml
+Ответ: 4800;9600
+5) Ответ: 5,3
+
+МДК 02.01
+1) Ответ: active
+2) Ответ: 8
+3) Ответ: shadow
+4) Ответ: 10.0.0.55;admin;48
+5) cd /etc/security/
+nano faillock.conf изменить deny - 5, unlock_time - 3600
+Ответ: 5;3600
+
+МДК 02.02
+1) sudo su
+sha 256sum hostname
+Ответ: 80c82b8058f6dea
+2) Ответ: flag{crypto_master}
+3) sudo su
+openssl x509 -enddate -noout -in /etc/ssl/certs/server.crt
+Ответ: 2027-06-15
+4) Ответ: req -x509 -newkey rsa:4096 -days 3650
+5) Ответ:openssl enc -aes -256 -cbc -sault -in file.txt -out file.enc
+
+МДК 03.01
+1) Ответ: виброакустический
+2) Ответ: шумовая
+3) Ответ: 4
+МДК 03.02
+1) инфракрасный
+2) 2
+3) -
